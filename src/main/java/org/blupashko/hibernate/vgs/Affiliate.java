@@ -32,7 +32,7 @@ public class Affiliate {
     @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    @Column(name = "id")
+    @Column(name = "id", nullable = false)
     public Integer getId() {
         return id;
     }
@@ -41,7 +41,7 @@ public class Affiliate {
         this.id = id;
     }
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     public String getName() {
         return name;
     }
@@ -50,7 +50,7 @@ public class Affiliate {
         this.name = name;
     }
 
-    @Column(name = "address")
+    @Column(name = "address", nullable = false)
     public String getAddress() {
         return address;
     }
@@ -59,7 +59,7 @@ public class Affiliate {
         this.address = address;
     }
 
-    @Column(name = "phone")
+    @Column(name = "phone", nullable = false)
     public String getPhone() {
         return phone;
     }
@@ -68,7 +68,7 @@ public class Affiliate {
         this.phone = phone;
     }
 
-    @Column(name = "contactName")
+    @Column(name = "contactName", nullable = false)
     public String getContactName() {
         return contactName;
     }
@@ -77,7 +77,7 @@ public class Affiliate {
         this.contactName = contactName;
     }
 
-    @Column(name = "comission")
+    @Column(name = "comission", nullable = false)
     public Integer getComission() {
         return comission;
     }
@@ -86,7 +86,7 @@ public class Affiliate {
         this.comission = comission;
     }
 
-    @Column(name = "code")
+    @Column(name = "code", nullable = false)
     public String getCode() {
         return code;
     }
